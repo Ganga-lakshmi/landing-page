@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- 
+		it helps us to make the website responsive-->
+
+	<title>momexperts</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- for add close and menu to the smaller devices, below not working -->
+	
+	<!-- <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="imgfolder/logo.jpg"></a>
+			<div class="nav-links" id="navlinks">
+				<!-- this id for to use js code  -->
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<!-- hidemenu function for hide the data and show menu for to show the nav bar -->
+			<ul>
+				<li><a href="#">HOME </a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="workshops.html">WORKSHOPS </a></li>
+				<li><a href="blog.html">BLOGS </a></li>
+				<li><a href="contact.html">CONTACT </a></li>
+
+
+			</ul>
+				
+				<!-- to add close icon -->
+			</div> 
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+			<!-- add menu icon -->
+		</nav>
+	<div class="text-box">
+		<h1>Services providing</h1>
+		<h3>Understanding Your Child's Development </h3>
+		<p>Feeling stuck as a parent? Tried everything to address your child’s behavior or attitude and are just not sure where to go next? Come to us.</p>
+		<a href="" class="hero-btn">Visit Us to know More</a>
+	</div>
+		
+	</section>
+
+
+
+
+
+
+
+
+
+<!-- ----call to Action---- -->
+
+<section class="cta">
+	<h1>Enroll for our various online workshops<br> anywhere from the world </h1>
+	<a href="workshops.html" class="hero-btn">WORKSHOPS</a>
+</section>
+
+
+<!-- ----Footer---- -->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+		
+	</div>
+	<p>made with <i class="fa fa-heart-o"></i> by students</p>
+	
+	
+</section>
+
+
+
+
+
+
+
+<!------javascript for toggle menu ------>
+<script type="text/javascript" src="script.js">
+	var navlinks=document.getElementById("navlinks");
+	function showMenu(){
+		navlinks.style.right="0";
+	}
+	function hideMenu(){
+		navlinks.style.right="-200px";
+	}
+
+
+
+</script>
+</body>
+</html>

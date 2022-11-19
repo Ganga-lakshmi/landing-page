@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- 
+		it helps us to make the website responsive-->
+
+	<title>momexperts</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- for add close and menu to the smaller devices, below not working -->
+	
+	<!-- <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+	<!-- from video only i writting -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="imgfolder/logo.jpg"></a>
+			<div class="nav-links" id="navlinks">
+				<!-- this id for to use js code  -->
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<!-- hidemenu function for hide the data and show menu for to show the nav bar -->
+			<ul>
+				<li><a href="index.html">HOME </a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="workshops.html">WORKSHOPS </a></li>
+				<li><a href="blog.html">BLOG </a></li>
+				<li><a href="contact.html">CONTACT </a></li>
+				
+
+
+			</ul>
+				
+				<!-- to add close icon -->
+			</div> 
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+			<!-- add menu icon -->
+		</nav>
+		<h1>Workshops</h1>
+	</section>
+
+<!-- ----course----- -->
+
+<section class="course">
+	<h2>Workshops we offer</h2>
+		<p> ipsum dolor sit amet, consectetur adipisicing elit.
+	</p>
+	
+	<div class="row">
+		<div class="Course-col">
+			<h3>The Prenatal Workshop 1</h3>
+			<p>‍Pregnancy can present a torrent of changes emotionally, physically and financially.
+				Naturally, as you go along, you may harbour questions and concerns about your growing baby.
+				The Prenatal Workshop is a programme aimed at arming you with everything you need to know about
+				pregnancy and labour, connecting you with a range of seasoned medical experts.
+			</p>
+		</div>
+			
+		 
+		 <div class="Course-col">
+			<h3>The Prenatal Workshop 2</h3>
+			<p>‍Pregnancy can present a torrent of changes emotionally, physically and financially.
+				Naturally, as you go along, you may harbour questions and concerns about your growing baby.
+				The Prenatal Workshop is a programme aimed at arming you with everything you need to know about
+				pregnancy and labour, connecting you with a range of seasoned medical experts.
+			</p>
+			
+		 </div> 
+		 <div class="Course-col">
+			<h3>The Prenatal Workshop 3</h3>
+			<p>‍Pregnancy can present a torrent of changes emotionally, physically and financially.
+				Naturally, as you go along, you may harbour questions and concerns about your growing baby.
+				The Prenatal Workshop is a programme aimed at arming you with everything you need to know about
+				pregnancy and labour, connecting you with a range of seasoned medical experts.
+			</p>
+			
+		 </div> 
+	</div>
+		
+	</section>
+
+<!--  ----facilities--- -->
+<section class="facilities">
+	<h2>OUR WORKSHOPS</h2>
+	<p> The Mom Expert’s one-stop solution to all your pregnancy and postpartum needs. Enroll now and get exciting pre-launch offers.</p>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="imgfolder/img6.jpg">
+			<h3>Breastfeeding Basics </h3>
+			
+			<p>Created for pregnant women, our class covers all you need to know to get breastfeeding off to a good start..</p>
+			<br><br> <a href="" class="hero-btn2">Enroll</a>
+		</div>
+		<div class="facilities-col">
+			<img src="imgfolder/img11.jpg">
+			<h3>Childbirth Education Basics</h3>
+			<p>Discover everything you need to know to prepare, get excited and remove the fear of childbirth.</p>
+            <br><br>
+			<a href="" class="hero-btn2">Enroll</a>
+		</div>
+		<div class="facilities-col">
+			<img src="imgfolder/img1.jpg">
+			<h3>Understanding Your Child's Development</h3>
+			<p>Feeling stuck as a parent? Tried everything to address your child’s behavior or attitude and are just </p>
+			<br>
+			<a href="" class="hero-btn2">Enroll</a>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="imgfolder/img3.jpeg">
+			<h3>Breastfeeding Basics </h3>
+			
+			<p>Created for pregnant women, our class covers all you need to know to get breastfeeding off to a good start..</p>
+			<br><br> <a href="" class="hero-btn2">Enroll</a>
+		</div>
+		<div class="facilities-col">
+			<img src="imgfolder/img5.jpg">
+			<h3>Childbirth Education Basics</h3>
+			<p>Discover everything you need to know to prepare, get excited and remove the fear of childbirth.</p>
+            <br><br>
+			<a href="" class="hero-btn2">Enroll</a>
+		</div>
+		<div class="facilities-col">
+			<img src="imgfolder/img6.jpg">
+			<h3>Understanding Your Child's Development</h3>
+			<p>Feeling stuck as a parent? Tried everything to address your child’s behavior or attitude and are just </p>
+			<br>
+			<a href="" class="hero-btn2">Enroll</a>
+		</div>
+		
+	</div>
+	
+</section>				
+
+
+	<!-- ----Footer---- -->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Lorem ipsum dolor sit amet,consecterur adiposcing elit.tempor incididunt ut labore et dolore magna aliqua.<br>
+	tempor incididunt ut labore et dolore magna aliqua</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+		
+	</div>
+	<p>made with <i class="fa fa-heart-o"></i> by students</p>
+	
+</section>
+
+
+<!------javascript for toggle menu ------>
+<script>
+	var navlinks=document.getElementById("navlinks");
+	function showMenu(){
+		navlinks.style.right="0";
+	}
+	function hideMenu(){
+		navlinks.style.right="-200px";
+	}
+</script>
+</body>
+</html>
